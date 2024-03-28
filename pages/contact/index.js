@@ -1,78 +1,146 @@
-import Circles from "../../components/Circles";
-
-import { BsArrowRight } from "react-icons/bs";
-
-import { motion } from "framer-motion";
-
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { BsArrowRight } from 'react-icons/bs';
 import { fadeIn } from "../../variants";
+import {ReactTyped}  from 'react-typed'
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbwdMNY5Txwb18K0HFyAcSwvfb8_6EFcprOd8Q_vknWxJ6hRXT-r2kTRVt2YzZTtE4kngg/exec', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams(formData).toString()
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      } else {
+        throw new Error('Error submitting form');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Something went wrong');
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   return (
     <div className="h-full bg-primary/30">
-      <div
-        className="container mx-auto py-32 text-center xl:text-left flex items-center
-      justify-center h-full"
-      >
-        <div className="flex flex-col w-full max-w-[700px] ">
-          <motion.h2
-            variants={fadeIn("up", 0.2)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="h2 text-[43px] text-center mb-12"
-          >
-            Let's <span className="text-accent">connect.</span>
-          </motion.h2>
+      <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
+        {!submitted ? (
+          <div className="flex flex-col w-full max-w-[700px] ">
+            <motion.h2
+              className="h2 text-[43px] text-center mb-12"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+            >
+              Let's <span className="text-accent">connect.</span>
+            </motion.h2>
 
-          <motion.form
-            variants={fadeIn("up", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="flex-1 flex flex-col gap-6 w-full mx-auto"
-          >
-            <div className="flex gap-x-6 w-full">
+            <motion.form
+              className="flex-1 flex flex-col gap-6 w-full mx-auto"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+              onSubmit={handleSubmit}
+            >
+              <div className="flex gap-x-6 w-full">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  className="input"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  className="input"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+
               <input
                 type="text"
-                id="id"
-                name="name"
-                placeholder="Full Name"
+                name="subject"
+                placeholder="Subject"
                 className="input"
+                value={formData.subject}
+                onChange={handleChange}
+                required
               />
-
-              <input
-                type="email"
-                id="id"
-                name="name"
-                placeholder="Email"
-                className="input"
-              />
-            </div>
-
-            <input
-              type="text"
-              id="id"
-              name="name"
-              placeholder="Subject"
-              className="input"
-            />
-            <textarea placeholder="Message" className="textarea"></textarea>
-            <button
-              className="btn border rounded-full border-white/50 max-w-[170px]
-              px-8 transiton-all duration-300 flex items-center justify-center
-              overflow-hidden hover:border-accent group"
-            >
-              <span
-                className="-translate-y-[120%] opacity-0 group-hover:flex
-              group-hover:-translate-y-0 group-hover:opacity-100 transition-all
-              duration-300 absolute text-[22px]"
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Message"
+                className="textarea"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              ></textarea>
+              <button
+                type="submit"
+                className="btn border rounded-full border-white/50 max-w-[170px] px-8 transiton-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+                disabled={submitting}
               >
-                Let's talk
-              </span>
-              <BsArrowRight />
-            </button>
-          </motion.form>
-        </div>
+                <span className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]">
+                  Let's talk
+                </span>
+                <BsArrowRight />
+              </button>
+            </motion.form>
+          </div>
+        ) : (
+          <div className="flex flex-col w-full max-w-[700px] ">
+            <motion.h2
+              className="h2 text-[43px] text-center mb-12"
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+            >
+              Thank you for Connecting
+              <ReactTyped strings={['....']}  typeSpeed ={120} backSpeed={140} className='text-accent'/>
+            </motion.h2>
+          </div>
+        )}
       </div>
     </div>
   );

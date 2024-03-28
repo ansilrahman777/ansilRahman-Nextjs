@@ -4,6 +4,9 @@ import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
 
+import {ReactTyped}  from 'react-typed'
+
+
 import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants";
@@ -20,8 +23,8 @@ const Home = () => {
             animate="show"
             exit="hidden"
           >
-            Transforming Ideas <br /> Into
-            <span className="text-accent">Digital Reality</span>
+            Heyy, <br /> I'm &nbsp;
+            <ReactTyped strings={['ANSIL RAHMAN','FREELANCER','DEVELOPER']}  typeSpeed ={150} backSpeed={140} loop  className='text-accent'/>
           </motion.h1>
 
           <motion.p
@@ -31,8 +34,7 @@ const Home = () => {
             animate="show"
             exit="hidden"
           >
-            Hi there! I'm ANSIL RAHMAN, a python developer, designer and, person
-            living in Kochi, Kerala.
+            Passionate Python full stack developer dedicated to crafting innovative web solutions with a focus on user experience, performance, and scalability
           </motion.p>
 
           <div className="flex justify-center xl:hidden relative">
