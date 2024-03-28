@@ -11,9 +11,9 @@ const Testimonials = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="h2 mb-8 xl:mb-0"
+          className="h2 text-[43px] mb-8 xl:mb-0"
         >
-          what clients <span className="text-accent">say.</span>
+          <span className="text-accent">Quotes</span>.
         </motion.h2>
 
         <motion.div

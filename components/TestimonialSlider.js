@@ -1,25 +1,34 @@
 // testimonial data
 const testimonialData = [
   {
-    image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+    image: "/testimonials-1.AVIF",
+    name: "Mahathma Gandhi",
+    position: "Father of nation",
+    message:"You may never know what results come of your actions, but if you do nothing, there will be no results."
   },
   {
-    image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+    image: "/testimonials-2.AVIF",
+    name: "Albert Einstein",
+    position: "Physicist",
+    message:"A person who never made a mistake never tried anything new."
   },
   {
-    image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+    image: "/testimonials-3.AVIF",
+    name: "APJ ABDUL KALAM",
+    position: "Scientist",
+    message:"To succeed in your mission, you must have single-minded devotion to your goal"
+  },
+  {
+    image: "/testimonials-4.AVIF",
+    name: "Werner Heisenberg",
+    position: "Physicist",
+    message:"An expert is someone who knows some of the worst mistakes that can be made in his subject and how to avoid them."
+  },
+  {
+    image: "/testimonials-5.AVIF",
+    name: "Lionel Messi",
+    position: "Footballer",
+    message:"It takes sacrifice, dedication, and hard work. It's about training your mind as much as your body."
   },
 ];
 

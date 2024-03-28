@@ -1,39 +1,52 @@
 // icons
+import {RxArrowTopRight } from "react-icons/rx";
+
 import {
-  RxCrop,
-  RxPencil2,
-  RxDesktop,
-  RxReader,
-  RxRocket,
-  RxArrowTopRight,
-} from "react-icons/rx";
+  RiHtml5Line,
+  RiCss3Line,
+  RiBootstrapLine,
+  RiReactjsLine,
+} from "react-icons/ri";
+import { TbBrandPython } from "react-icons/tb";
+import { TbBrandTailwind } from "react-icons/tb";
 
 // data
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <TbBrandPython />,
+    title: "PYTHON",
+    description:
+      "Versatile backend solutions, data analysis, and automation expertise offered.",
   },
   {
-    icon: <RxPencil2 />,
-    title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <RiReactjsLine />,
+    title: "REACT",
+    description:
+      "Empowering dynamic interfaces through efficient React component architecture",
   },
   {
-    icon: <RxDesktop />,
-    title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <TbBrandTailwind />,
+    title: "TAILWIND",
+    description:
+      "Efficiently styled and responsive interfaces crafted effortlessly with Tailwind CSS.",
   },
   {
-    icon: <RxReader />,
-    title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <RiHtml5Line />,
+    title: "HTML",
+    description:
+      "Engaging web interfaces with semantic HTML for optimal compatibility.",
   },
   {
-    icon: <RxRocket />,
-    title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <RiCss3Line />,
+    title: "CSS",
+    description:
+      "Flexibility and creativity craft stunning, dynamic layouts effortlessly using CSS.",
+  },
+  {
+    icon: <RiBootstrapLine />,
+    title: "BOOTSTRAP",
+    description:
+      "Rapid responsive website development ensured with Bootstrap framework.",
   },
 ];
 

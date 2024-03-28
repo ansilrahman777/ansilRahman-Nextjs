@@ -4,17 +4,20 @@ import React, { useState } from "react";
 import {
   FaHtml5,
   FaCss3,
+  FaPython,
   FaJs,
   FaReact,
-  FaWordpress,
   FaFigma,
 } from "react-icons/fa";
 
-import {
-  SiNextdotjs,
-  SiFramer,
+import {  SiFramer,
   SiAdobexd,
-  SiAdobephotoshop,
+  SiDjango ,
+  SiTailwindcss ,
+  SiPostgresql ,
+  SiFirebase ,
+  SiMongodb, 
+  SiRedux ,
 } from "react-icons/si";
 
 //  data
@@ -23,73 +26,76 @@ const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "",
         icons: [
+          <FaPython />,
           <FaHtml5 />,
           <FaCss3 />,
+          <SiDjango />,
           <FaJs />,
           <FaReact />,
-          <SiNextdotjs />,
+          <SiRedux />,
+          <SiTailwindcss />,
           <SiFramer />,
-          <FaWordpress />,
+          <FaFigma />,
+          <SiPostgresql />,
+          <SiMongodb />,
+          <SiFirebase />,
+          <SiAdobexd />, 
         ],
       },
-      {
-        title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-      },
     ],
   },
   {
-    title: "awards",
+    title: "Education",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "MSC PHYSICS",
+        stage: "2020 - 2022",
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "BSC PHYSICS",
+        stage: "2017 - 2020",
       },
     ],
   },
-  {
-    title: "experience",
-    info: [
-      {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-      },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
-    ],
-  },
-  {
-    title: "credentials",
-    info: [
-      {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
-      },
-    ],
-  },
+  // {
+  //   title: "experience",
+  //   info: [
+  //     {
+  //       title: "UX/UI Designer - XYZ Company",
+  //       stage: "2012 - 2023",
+  //     },
+  //     {
+  //       title: "Web Developer - ABC Agency",
+  //       stage: "2010 - 2012",
+  //     },
+  //     {
+  //       title: "Intern - DEF Corporation",
+  //       stage: "2008 - 2010",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "credentials",
+  //   info: [
+  //     {
+  //       title: "Web Development - ABC University, LA, CA",
+  //       stage: "2011",
+  //     },
+  //     {
+  //       title: "Computer Science Diploma - AV Technical Institute",
+  //       stage: "2009",
+  //     },
+  //     {
+  //       title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
+  //       stage: "2006",
+  //     },
+  //   ],
+  // },
 ];
 
-import Avatar from "../../components/Avatar";
+import AvatarAbout from "../../components/AvatarAbout";
 import Circles from "../../components/Circles";
 
 import { motion } from "framer-motion";
@@ -107,9 +113,9 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="hidden xl:flex absolute bottom-0 -left-[100px]"
       >
-        {/* <Avatar/> */}
+        <AvatarAbout/>
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         <div className="flex-1 flex flex-col justify-center">
@@ -118,7 +124,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 text-5xl"
+            className="h2 text-[43px]"
           >
             Captivating <span className="text-accent">stories</span>birth
             magnificent designs.

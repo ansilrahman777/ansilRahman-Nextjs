@@ -4,47 +4,62 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
+          title: "VOXY",
           path: "/thumb1.jpg",
+          git: "https://github.com/ansilrahman777/voxy",
+          live: "https://www.ansilrahman777.online/",
         },
         {
-          title: "title",
+          title: "BACKPACKERZ",
           path: "/thumb2.jpg",
+          git: "https://github.com/ansilrahman777/Backpackerz",
         },
         {
-          title: "title",
+          title: "PORFOLIO",
           path: "/thumb3.jpg",
+          git: "https://github.com/ansilrahman777/ansilRahman",
+          live: "https://ansilrahman777.github.io/ansilRahman/",
         },
         {
-          title: "title",
+          title: "NETFLIX",
           path: "/thumb4.jpg",
+          git: "https://github.com/ansilrahman777/Netflix",
         },
       ],
     },
     {
       images: [
         {
-          title: "title",
+          title: "TODO",
           path: "/thumb4.jpg",
+          git: "https://github.com/ansilrahman777/Todo",
         },
         {
-          title: "title",
+          title: "OLX",
           path: "/thumb1.jpg",
+          git: "https://github.com/ansilrahman777/olxClone",
+          live: "",
         },
         {
-          title: "title",
+          title: "ADIDAS",
           path: "/thumb2.jpg",
+          git: "https://github.com/ansilrahman777/Adidas",
         },
         {
-          title: "title",
+          title: "OLX",
           path: "/thumb3.jpg",
+          git: "https://github.com/ansilrahman777/Bentely",
         },
       ],
     },
   ],
 };
+
 import Image from "next/image";
+import Link from "next/link";
+
 import { BsArrowRight } from "react-icons/bs";
+import { TbBrandGithub, TbLivePhoto } from "react-icons/tb";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -85,14 +100,14 @@ const WorkSlider = () => {
                         group-hover:xl:-translate-y-20 transition-all duration-300"
                       >
                         <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
-                          <div className="delay-100">Live</div>
-
-                          <div
+                          <TbBrandGithub />
+                          <Link
+                            href={image.git}
                             className="translate-y-[500%] group-hover:translate-y-0
                           transition-all duration-300 delay-150"
                           >
-                            PROJECT
-                          </div>
+                            {image.title}
+                          </Link>
 
                           <div
                             className="text-xl translate-y-[500%] group-hover:translate-y-0
@@ -101,6 +116,15 @@ const WorkSlider = () => {
                             <BsArrowRight />
                           </div>
                         </div>
+
+                        {image.live && (
+                          <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
+                            <TbLivePhoto />
+                            <Link href={image.live} className="delay-100">
+                              Live
+                            </Link>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>

@@ -13,10 +13,16 @@ const Home = () => {
     <div className="bg-primary/60 h-full">
       <div className="w-ful h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center xl:pt-35 xl:text-left h-full container mx-auto">
-          <h1 className="h1">
+          <motion.h1
+            className="h1 text-[45px]"
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+          >
             Transforming Ideas <br /> Into
             <span className="text-accent">Digital Reality</span>
-          </h1>
+          </motion.h1>
 
           <motion.p
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-6"
@@ -55,7 +61,7 @@ const Home = () => {
         </div>
 
         <motion.div
-          className="w-full h-full max-w-[527px] max-h-[478px] absolute -bottom-32
+          className="w-full h-full max-w-[527px] max-h-[548px] absolute -bottom-32
           lg:bottom-0 lg:right-[8%]"
           variants={fadeIn("up", 0.4)}
           initial="hidden"
