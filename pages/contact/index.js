@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
 import { fadeIn } from "../../variants";
 import { ReactTyped } from "react-typed";
-import { MailIcon, MapPin, PhoneIcon, Copyright } from "lucide-react";
+import { MailIcon, MapPin, PhoneIcon } from "lucide-react";
 import Socials from "../../components/Socials";
 
 const Contact = () => {
@@ -91,9 +91,6 @@ const Contact = () => {
           <div className="hidden mt-10 md:flex ">
             <Socials />
           </div>
-          {/* <div className="hidden mt-5 md:flex ">
-            <Copyright className="text-accent " size={18} /> Ansil Rahman
-          </div> */}
         </div>
 
         {!submitted ? (

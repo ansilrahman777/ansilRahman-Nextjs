@@ -160,8 +160,8 @@ const About = () => {
             exit="hidden"
             className="text-[43px] relative"
           >
-            Inspiring Innovation, Building <span className="text-accent">Futures</span>
-          
+            Inspiring Innovation, Building{" "}
+            <span className="text-accent">Futures</span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.2)}
@@ -170,9 +170,12 @@ const About = () => {
             exit="hidden"
             className=" max-w-[500px] text-justify mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            <div className="relative">  I am driven by the belief that technology should be accessible to
-            all, and I actively seek opportunities to collaborate, share
-            knowledge, and mentor aspiring developers.</div>
+            <div className="relative">
+              {" "}
+              I am driven by the belief that technology should be accessible to
+              all, and I actively seek opportunities to collaborate, share
+              knowledge, and mentor aspiring developers.
+            </div>
           </motion.p>
           <motion.div
             variants={fadeIn("right", 0.6)}
@@ -254,6 +257,7 @@ const About = () => {
             <div className="text-lg mt-12 xl:mt-8">
               {/* Tab contents */}
 
+              {/* Tab contents */}
               <TabsContent value="skills">
                 <div className="text-center xl:text-left">
                   {/* skills */}
@@ -317,6 +321,7 @@ const About = () => {
                             const { company, role, years } = item;
                             return (
                               <div className="flex gap-x-8 group " key={index}>
+                                {" "}
                                 <div className="h-[84px] w-[1px] bg-border relative ml-2">
                                   <div className="w-[11px] h-[11px] rounded-full bg-accent absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                 </div>
@@ -353,6 +358,7 @@ const About = () => {
                             const { university, qualification, years } = item;
                             return (
                               <div className="flex gap-x-8 group " key={index}>
+                                {" "}
                                 <div className="h-[84px] w-[1px] bg-border relative ml-2">
                                   <div className="w-[11px] h-[11px] rounded-full bg-accent absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                 </div>
