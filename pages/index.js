@@ -18,7 +18,7 @@ const Home = () => {
             animate="show"
             exit="hidden"
           >
-            Hey, <br /> I'm &nbsp;
+            Hey, <br /> I&apos;m &nbsp;
             <ReactTyped strings={['ANSIL RAHMAN','FREELANCER','DEVELOPER']}  typeSpeed ={150} backSpeed={140} loop  className='text-accent'/>
           </motion.h1>
 

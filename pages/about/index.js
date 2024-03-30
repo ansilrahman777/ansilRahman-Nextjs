@@ -116,20 +116,20 @@ const About = () => {
     {
       title: "skills",
       icons: [
-        <FaPython />,
-        <FaHtml5 />,
-        <FaCss3 />,
-        <SiDjango />,
-        <FaJs />,
-        <FaReact />,
-        <SiRedux />,
-        <SiTailwindcss />,
-        <SiFramer />,
-        <FaFigma />,
-        <SiPostgresql />,
-        <SiMongodb />,
-        <SiFirebase />,
-        <SiAdobexd />,
+        <FaPython key="python" />,
+        <FaHtml5 key="html" />,
+        <FaCss3 key="css" />,
+        <SiDjango key="django" />,
+        <FaJs key="javascript" />,
+        <FaReact key="react" />,
+        <SiRedux key="redux" />,
+        <SiTailwindcss key="tailwind" />,
+        <SiFramer key="framer" />,
+        <FaFigma key="figma" />,
+        <SiPostgresql key="postgresql" />,
+        <SiMongodb key="mongodb" />,
+        <SiFirebase key="firebase" />,
+        <SiAdobexd key="adobexd" />,
       ],
     },
   ];
@@ -256,18 +256,16 @@ const About = () => {
             </TabsList>
             <div className="text-lg mt-12 xl:mt-8">
               {/* Tab contents */}
-
-              {/* Tab contents */}
               <TabsContent value="skills">
                 <div className="text-center xl:text-left">
                   {/* skills */}
                   <div className="mb-16">
                     {/* skill list */}
                     <div className="grid grid-cols-6 gap-4">
-                      {getData(skillData, "skills").icons.map((icon, index) => (
+                      {getData(skillData, "skills").icons.map((icon) => (
                         <div
                           className="w-5/6 text-center xl:text-left mx-auto xl:mx-0"
-                          key={index}
+                          key={icon.key} // Unique key
                         >
                           <div className="text-3xl">{icon}</div>
                         </div>
@@ -289,10 +287,10 @@ const About = () => {
                   </p> */}
                   {/* icons */}
                   <div className="grid xl:grid-cols-1 gap-4 mb-12">
-                    {infoData.map((item, index) => (
+                    {infoData.map((item) => (
                       <div
                         className="flex flex-row items-start gap-x-4 mx-auto xl:mx-0"
-                        key={index}
+                        key={item.text} // Unique key
                       >
                         <div>{item.icon}</div>
                         <div>{item.text}</div>
@@ -317,28 +315,29 @@ const About = () => {
                       {/* list */}
                       <div className="flex flex-col gap-y-8 ">
                         {getData(qualificationData, "experience").data.map(
-                          (item, index) => {
-                            const { company, role, years } = item;
-                            return (
-                              <div className="flex gap-x-8 group " key={index}>
-                                {" "}
-                                <div className="h-[84px] w-[1px] bg-border relative ml-2">
-                                  <div className="w-[11px] h-[11px] rounded-full bg-accent absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
+                          (item) => (
+                            <div
+                              className="flex gap-x-8 group"
+                              key={item.company}
+                            >
+                              {" "}
+                              {/* Unique key */}
+                              <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                                <div className="w-[11px] h-[11px] rounded-full bg-accent absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
+                              </div>
+                              <div>
+                                <div className="font-semibold text-white/60 text-lg leading-none mb-2">
+                                  {item.company}
                                 </div>
-                                <div>
-                                  <div className="font-semibold text-white/60 text-lg leading-none mb-2">
-                                    {company}
-                                  </div>
-                                  <div className="text-base text-white/60 leading-none text-muted-foreground mb-4">
-                                    {role}
-                                  </div>
-                                  <div className="text-sm text-white/60 font-medium">
-                                    {years}
-                                  </div>
+                                <div className="text-base text-white/60 leading-none text-muted-foreground mb-4">
+                                  {item.role}
+                                </div>
+                                <div className="text-sm text-white/60 font-medium">
+                                  {item.years}
                                 </div>
                               </div>
-                            );
-                          }
+                            </div>
+                          )
                         )}
                       </div>
                     </div>
@@ -354,28 +353,29 @@ const About = () => {
                       {/* list */}
                       <div className="flex flex-col gap-y-8 ">
                         {getData(qualificationData, "education").data.map(
-                          (item, index) => {
-                            const { university, qualification, years } = item;
-                            return (
-                              <div className="flex gap-x-8 group " key={index}>
-                                {" "}
-                                <div className="h-[84px] w-[1px] bg-border relative ml-2">
-                                  <div className="w-[11px] h-[11px] rounded-full bg-accent absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
+                          (item) => (
+                            <div
+                              className="flex gap-x-8 group"
+                              key={item.university}
+                            >
+                              {" "}
+                              {/* Unique key */}
+                              <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                                <div className="w-[11px] h-[11px] rounded-full bg-accent absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
+                              </div>
+                              <div>
+                                <div className="font-semibold text-white/60 text-lg leading-none mb-2">
+                                  {item.university}
                                 </div>
-                                <div>
-                                  <div className="font-semibold text-white/60 text-lg leading-none mb-2">
-                                    {university}
-                                  </div>
-                                  <div className="text-base text-white/60 leading-none text-muted-foreground mb-4">
-                                    {qualification}
-                                  </div>
-                                  <div className="text-sm text-white/60 font-medium">
-                                    {years}
-                                  </div>
+                                <div className="text-base text-white/60 leading-none text-muted-foreground mb-4">
+                                  {item.qualification}
+                                </div>
+                                <div className="text-sm text-white/60 font-medium">
+                                  {item.years}
                                 </div>
                               </div>
-                            );
-                          }
+                            </div>
+                          )
                         )}
                       </div>
                     </div>
