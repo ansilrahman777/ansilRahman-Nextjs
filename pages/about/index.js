@@ -5,6 +5,9 @@ import Circles from "../../components/Circles";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import CountUP from "react-countup";
+import { PiShapesFill } from "react-icons/pi";
+import { BsPersonFill } from "react-icons/bs";
+import { FaGraduationCap } from "react-icons/fa";
 // icons
 import {
   FaHtml5,
@@ -66,12 +69,12 @@ const About = () => {
       text: "Born on 05 Oct, 1999",
     },
     {
-      icon: <GraduationCap className="text-accent" size={20} />,
-      text: "Masters",
-    },
-    {
       icon: <MailIcon className="text-accent" size={20} />,
       text: "ansilrahman777@gmail.com",
+    },
+    {
+      icon: <GraduationCap className="text-accent" size={20} />,
+      text: "Masters",
     },
     {
       icon: <HomeIcon className="text-accent" size={20} />,
@@ -105,7 +108,7 @@ const About = () => {
       data: [
         {
           company: "Brototype",
-          role: "PYTHON FULL STACK DEVELOPER INTERN",
+          role: "PYTHON DEVELOPER INTERN",
           years: "2023-2024",
         },
       ],
@@ -142,23 +145,23 @@ const About = () => {
   return (
     <div className="h-full  py-32 text-center xl:text-left">
       <Circles />
-      <motion.div
+      <motion.div 
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute -bottom-2 -left-[100px]"
+        className="flex fixed -bottom-2 -left-[100px] "
       >
         <AvatarAbout />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="p-5 md:container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-[43px] relative"
+            className="text-[20px]  xl:text-[43px] relative"
           >
             Inspiring Innovation, Building{" "}
             <span className="text-accent">Futures</span>
@@ -168,9 +171,9 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className=" max-w-[500px] text-justify mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="text-justify mb-6 xl:mb-12"
           >
-            <div className="relative">
+            <div className="relative max-w-[520px]">
               {" "}
               I am driven by the belief that technology should be accessible to
               all, and I actively seek opportunities to collaborate, share
@@ -184,21 +187,21 @@ const About = () => {
             exit="hidden"
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
           >
-            <div className="flex flex-1 xl:gap-x-6">
+            <div className="flex  flex-1 xl:gap-x-6">
               <div
-                className="relative felx-1 after:w-[1px] after:h-full
+                className="relative p-3 xl:p-0  felx-1 after:w-[1px] after:h-full
             after:bg-white/10 after:absolute after:top-0 after:right-0 "
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUP start={0} end={1.5} duration={5} />+
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-wp[100px]">
+                <div className="text-xs  uppercase tracking-[1px] leading-[1.4] max-wp[100px]">
                   years of experience
                 </div>
               </div>
 
               <div
-                className="relative felx-1 after:w-[1px] after:h-full
+                className="relative p-3 xl:p-0  felx-1 after:w-[1px] after:h-full
             after:bg-white/10 after:absolute after:top-0 after:right-0 "
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
@@ -210,7 +213,7 @@ const About = () => {
               </div>
 
               <div
-                className="relative felx-1 after:w-[1px] after:h-full
+                className="relative p-3 xl:p-0  felx-1 after:w-[1px] after:h-full
             after:bg-white/10 after:absolute after:top-0 after:right-0 "
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
@@ -221,7 +224,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="relative felx-1 ">
+              <div className="relative p-3 xl:p-0  felx-1 ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUP start={0} end={8} duration={5} />
                 </div>
@@ -238,30 +241,49 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full items-center xl:max-w-[48%] h-[480px]"
+          className="flex flex-col xl:mt-28 items-center xl:max-w-[48%] h-[480px] relative"
         >
-          <Tabs defaultValue="personal" onChange={handleTabChange}>
-            <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
-              <TabsTrigger className="w-[162px]" value="skills">
-                Skills
+          <Tabs defaultValue="skills" onChange={handleTabChange}>
+            <TabsList className="w-full grid grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
+              {/* Conditionally render text or icon based on screen size */}
+              <TabsTrigger className="w-full hidden sm:inline-block" value="skills">
+                Skills & Tools
               </TabsTrigger>
-
-              <TabsTrigger className="w-[162px]" value="personal">
+              <TabsTrigger
+                className="w-full hidden sm:inline-block"
+                value="personal"
+              >
                 Personal Info
               </TabsTrigger>
-
-              <TabsTrigger className="w-[162px]" value="qualifications">
+              <TabsTrigger
+                className="w-full hidden sm:inline-block"
+                value="qualifications"
+              >
                 Qualifications
               </TabsTrigger>
+
+              {/* Render icons on screens smaller than md */}
+              <TabsTrigger className="w-full sm:hidden" value="skills">
+                <PiShapesFill /> {/* Replace with appropriate icon component */}
+              </TabsTrigger>
+              <TabsTrigger className="w-full sm:hidden" value="personal">
+                <BsPersonFill /> {/* Replace with appropriate icon component */}
+              </TabsTrigger>
+              <TabsTrigger
+                className="w-full sm:hidden"
+                value="qualifications"
+              >
+                <FaGraduationCap />{" "}
+                {/* Replace with appropriate icon component */}
+              </TabsTrigger>
             </TabsList>
-            <div className="text-lg mt-12 xl:mt-8">
+            <div className="text-lg mt-12 xl:mt-8 mb-8">
               {/* Tab contents */}
               <TabsContent value="skills">
                 <div className="text-center xl:text-left">
                   {/* skills */}
-                  <div className="mb-16">
                     {/* skill list */}
-                    <div className="grid grid-cols-6 gap-4">
+                    <div className="grid grid-cols-6 gap-4 mb-24 xl:mb-0">
                       {getData(skillData, "skills").icons.map((icon) => (
                         <div
                           className="w-5/6 text-center xl:text-left mx-auto xl:mx-0"
@@ -270,14 +292,13 @@ const About = () => {
                           <div className="text-3xl">{icon}</div>
                         </div>
                       ))}
-                    </div>
                   </div>
                 </div>
               </TabsContent>
 
               <TabsContent value="personal">
                 <div className="text-start xl:text-left">
-                  <h2 className="text-base uppercase mb-7 xl:items-start items-center">
+                  <h2 className="hidden xl:flex text-base uppercase mb-7 xl:items-start items-center">
                     Motivated by the Desire to achieve Success
                   </h2>
                   {/* <p className="max-w-xl mx-auto xl:mx-0 ">
@@ -286,14 +307,13 @@ const About = () => {
                     user experiences.{" "}
                   </p> */}
                   {/* icons */}
-                  <div className="grid xl:grid-cols-1 gap-4 mb-12">
+                  <div className="grid sm:grid-cols-2  gap-4 mb-24 md:mb-0">
                     {infoData.map((item) => (
                       <div
-                        className="flex flex-row items-start gap-x-4 mx-auto xl:mx-0"
+                        className="flex flex-row items-start  gap-x-4 mx-auto xl:mx-0"
                         key={item.text} // Unique key
                       >
-                        <div>{item.icon}</div>
-                        <div>{item.text}</div>
+                        <div className="flex gap-2">{item.icon}  {item.text}</div>
                       </div>
                     ))}
                   </div>
@@ -301,9 +321,9 @@ const About = () => {
               </TabsContent>
 
               <TabsContent value="qualifications">
-                <div className="flex justify-center items-center h-full">
+                <div className="flex justify-between items-center h-full">
                   {/* experience & education */}
-                  <div className="grid md:grid-cols-2  gap-y-8">
+                  <div className="grid md:grid-cols-2 gap-4 mb-24 xl:mb-0">
                     {/* experience */}
                     <div className="flex flex-col gap-y-6 xl:items-start items-center">
                       <div className="flex gap-x-4  ">

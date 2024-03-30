@@ -2,8 +2,7 @@ import Image from "next/image";
 
 import Link from "next/link";
 
-import { HiArrowRight } from "react-icons/hi2";
-
+import { AiOutlineDownload  } from "react-icons/ai";
 const ProjectsBtn = () => {
   return (
     <div className="mx-auto xl:mx-0 relative">
@@ -19,7 +18,7 @@ const ProjectsBtn = () => {
           height={140}
           className="animate-spin-slow w-full h-full max-w-[148px] max-h-[148px] absolute z-10"
         />
-        <HiArrowRight className="text-4xl group-hover:translate-x-2 transition-all duration-300 z-20 group-hover:text-accent" />
+        <AiOutlineDownload  className="text-4xl group-hover:translate-x-2 transition-all duration-300 z-20 group-hover:text-accent" />
       </a>
     </div>
   );

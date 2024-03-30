@@ -8,7 +8,8 @@ const workSlides = {
           path: "/voxy.png",
           git: "https://github.com/ansilrahman777/voxy",
           live: "https://www.ansilrahman777.online/",
-        },{
+        },
+        {
           title: "ADIDAS CLONE",
           path: "/adidas.png",
           git: "https://github.com/ansilrahman777/Adidas",
@@ -24,7 +25,6 @@ const workSlides = {
           git: "https://github.com/ansilrahman777/ansilRahman",
           live: "https://ansilrahman777.github.io/ansilRahman/",
         },
-        
       ],
     },
     {

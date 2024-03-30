@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="h-full">
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-35 xl:text-left h-full container mx-auto">
+        <div className="text-center flex flex-col justify-center xl:pt-35 xl:text-left h-full p-5 md:container  mx-auto">
           <motion.h1
             className="h1 text-[40px] mt-24"
             variants={fadeIn("up", 0.4)}
@@ -32,7 +32,7 @@ const Home = () => {
             Passionate Python full stack developer dedicated to crafting innovative web solutions with a focus on user experience, performance, and scalability
           </motion.p>
 
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center mb-20 xl:hidden relative">
             <ProjectsBtn />
           </div>
           <motion.div
