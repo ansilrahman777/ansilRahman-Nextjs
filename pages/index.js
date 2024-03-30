@@ -13,22 +13,22 @@ import { fadeIn } from "../variants";
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full">
+    <div className="h-full">
       <div className="w-ful h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center xl:pt-35 xl:text-left h-full container mx-auto">
           <motion.h1
-            className="h1 text-[45px]"
+            className="h1 text-[40px] mt-24"
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
           >
-            Heyy, <br /> I'm &nbsp;
+            Hey, <br /> I'm &nbsp;
             <ReactTyped strings={['ANSIL RAHMAN','FREELANCER','DEVELOPER']}  typeSpeed ={150} backSpeed={140} loop  className='text-accent'/>
           </motion.h1>
 
           <motion.p
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-6"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-6 text-justify"
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"
@@ -63,8 +63,8 @@ const Home = () => {
         </div>
 
         <motion.div
-          className="w-full h-full max-w-[527px] max-h-[548px] absolute -bottom-32
-          lg:bottom-0 lg:right-[8%]"
+          className="w-full max-w-[527px] max-h-[548px] absolute bottom-11
+          lg:bottom-11 lg:right-[8%]"
           variants={fadeIn("up", 0.4)}
           initial="hidden"
           animate="show"

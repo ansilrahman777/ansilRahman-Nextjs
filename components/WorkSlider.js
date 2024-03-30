@@ -5,49 +5,48 @@ const workSlides = {
       images: [
         {
           title: "VOXY",
-          path: "/thumb1.jpg",
+          path: "/voxy.png",
           git: "https://github.com/ansilrahman777/voxy",
           live: "https://www.ansilrahman777.online/",
+        },{
+          title: "ADIDAS CLONE",
+          path: "/adidas.png",
+          git: "https://github.com/ansilrahman777/Adidas",
         },
+        {
+          title: "TODO",
+          path: "/todo.png",
+          git: "https://github.com/ansilrahman777/Todo",
+        },
+        {
+          title: "PORFOLIO",
+          path: "/ansil.png",
+          git: "https://github.com/ansilrahman777/ansilRahman",
+          live: "https://ansilrahman777.github.io/ansilRahman/",
+        },
+        
+      ],
+    },
+    {
+      images: [
         {
           title: "BACKPACKERZ",
           path: "/thumb2.jpg",
           git: "https://github.com/ansilrahman777/Backpackerz",
         },
         {
-          title: "PORFOLIO",
-          path: "/thumb3.jpg",
-          git: "https://github.com/ansilrahman777/ansilRahman",
-          live: "https://ansilrahman777.github.io/ansilRahman/",
-        },
-        {
           title: "NETFLIX",
           path: "/thumb4.jpg",
           git: "https://github.com/ansilrahman777/Netflix",
         },
-      ],
-    },
-    {
-      images: [
-        {
-          title: "TODO",
-          path: "/thumb4.jpg",
-          git: "https://github.com/ansilrahman777/Todo",
-        },
-        {
-          title: "OLX",
-          path: "/thumb1.jpg",
-          git: "https://github.com/ansilrahman777/olxClone",
-          live: "",
-        },
-        {
-          title: "ADIDAS",
-          path: "/thumb2.jpg",
-          git: "https://github.com/ansilrahman777/Adidas",
-        },
         {
           title: "OLX",
           path: "/thumb3.jpg",
+          git: "https://github.com/ansilrahman777/olxClone",
+        },
+        {
+          title: "BENTELY CLONE",
+          path: "/bentely.png",
           git: "https://github.com/ansilrahman777/Bentely",
         },
       ],

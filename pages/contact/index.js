@@ -1,15 +1,17 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { BsArrowRight } from 'react-icons/bs';
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { BsArrowRight } from "react-icons/bs";
 import { fadeIn } from "../../variants";
-import {ReactTyped}  from 'react-typed'
+import { ReactTyped } from "react-typed";
+import { MailIcon, MapPin, PhoneIcon, Copyright } from "lucide-react";
+import Socials from "../../components/Socials";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -18,7 +20,7 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -27,36 +29,73 @@ const Contact = () => {
     setSubmitting(true);
 
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbwdMNY5Txwb18K0HFyAcSwvfb8_6EFcprOd8Q_vknWxJ6hRXT-r2kTRVt2YzZTtE4kngg/exec', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: new URLSearchParams(formData).toString()
-      });
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbwdMNY5Txwb18K0HFyAcSwvfb8_6EFcprOd8Q_vknWxJ6hRXT-r2kTRVt2YzZTtE4kngg/exec",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: new URLSearchParams(formData).toString(),
+        }
+      );
 
       if (response.ok) {
         setSubmitted(true);
         setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          message: ''
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
         });
       } else {
-        throw new Error('Error submitting form');
+        throw new Error("Error submitting form");
       }
     } catch (error) {
       console.error(error);
-      alert('Something went wrong');
+      alert("Something went wrong");
     } finally {
       setSubmitting(false);
     }
   };
 
   return (
-    <div className="h-full bg-primary/30">
-      <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
+    <div className="h-full mt-16">
+      <div className="container flex-col xl:flex-row mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
+        <div className="hidden xl:flex flex-col m-auto p-10">
+          <div className="flex flex-col justify-center">
+            <div className="flex items-center text-2xl mb-4">
+              Let&apos;s Work
+              <span className="text-accent">Together.</span>
+            </div>
+            <p className=" max-w-[600px] text-justify">
+              Feel free to reach out to discuss your ideas or projects, or if
+              you have any inquiries. I&apos;m here to help and collaborate with
+              you!
+            </p>
+          </div>
+          <div className="flex flex-col mt-4 md:mt-10 gap-y-3 ">
+            <div className="flex items-center gap-2 ">
+              <MailIcon size={18} className="text-accent" />
+              <div>ansilrahman777@gmail.com</div>
+            </div>
+            <div className="flex items-center gap-2">
+              <PhoneIcon size={18} className="text-accent" />
+              <div>+91 8592959403</div>
+            </div>
+            <div className="flex items-center gap-2">
+              <MapPin size={18} className="text-accent" />
+              <div>Kochi, Kerala, India</div>
+            </div>
+          </div>
+          <div className="hidden mt-10 md:flex ">
+            <Socials />
+          </div>
+          {/* <div className="hidden mt-5 md:flex ">
+            <Copyright className="text-accent " size={18} /> Ansil Rahman
+          </div> */}
+        </div>
+
         {!submitted ? (
           <div className="flex flex-col w-full max-w-[700px] ">
             <motion.h2
@@ -137,7 +176,12 @@ const Contact = () => {
               exit="hidden"
             >
               Thank you for Connecting
-              <ReactTyped strings={['....']}  typeSpeed ={120} backSpeed={140} className='text-accent'/>
+              <ReactTyped
+                strings={["...."]}
+                typeSpeed={120}
+                backSpeed={140}
+                className="text-accent"
+              />
             </motion.h2>
           </div>
         )}

@@ -20,10 +20,10 @@
 
 @layer base {
   body {
-    @apply bg-white  leading-relaxed ;
+    @apply  overflow-hidden leading-relaxed;
   }
   .page {
-    @apply w-full h-screen overflow-hidden ;
+    @apply w-full h-screen  overflow-x-hidden;
   }
   .h1 {
     @apply text-[20px] leading-tight md:text-[60px] md:leading-[1.3] mb-8 font-semibold;

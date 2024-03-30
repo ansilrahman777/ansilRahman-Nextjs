@@ -51,7 +51,7 @@ const TestimonialSlider = () => {
         clickable: true,
       }}
       modules={[Navigation, Pagination]}
-      className="h-[400px]"
+      className="h-[400px]  w-3/4"
     >
       {testimonialData.map((person, index) => {
         return (
