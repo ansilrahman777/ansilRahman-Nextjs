@@ -65,7 +65,7 @@ const Home = () => {
 
         <motion.div
           className="w-full max-w-[527px] max-h-[548px] absolute bottom-11
-          lg:bottom-11 lg:right-[8%]"
+          lg:bottom-11 right-[0%]"
           variants={fadeIn("up", 0.4)}
           initial="hidden"
           animate="show"
