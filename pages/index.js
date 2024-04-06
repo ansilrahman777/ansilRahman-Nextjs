@@ -32,9 +32,15 @@ const Home = () => {
             Passionate Python full stack developer dedicated to crafting innovative web solutions with a focus on user experience, performance, and scalability
           </motion.p>
 
-          <div className="flex justify-center mb-20 xl:hidden relative">
+          <motion.div 
+            className="flex justify-center mb-20 xl:hidden relative"
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            >
             <ProjectsBtn />
-          </div>
+          </motion.div>
           <motion.div
             variants={fadeIn("up", 0.4)}
             initial="hidden"

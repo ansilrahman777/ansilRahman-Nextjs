@@ -324,43 +324,6 @@ const About = () => {
                 <div className="flex justify-between items-center h-full">
                   {/* experience & education */}
                   <div className="grid md:grid-cols-2 gap-4 mb-24 xl:mb-0">
-                    {/* experience */}
-                    <div className="flex flex-col gap-y-6 xl:items-start items-center">
-                      <div className="flex gap-x-4  ">
-                        {/* <GraduationCap size={28} /> */}
-                        <h4 className="text-base uppercase">
-                          {getData(qualificationData, "experience").title}
-                        </h4>
-                      </div>
-                      {/* list */}
-                      <div className="flex flex-col gap-y-8 ">
-                        {getData(qualificationData, "experience").data.map(
-                          (item) => (
-                            <div
-                              className="flex gap-x-8 group"
-                              key={item.company}
-                            >
-                              {" "}
-                              {/* Unique key */}
-                              <div className="h-[84px] w-[1px] bg-border relative ml-2">
-                                <div className="w-[11px] h-[11px] rounded-full bg-accent absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
-                              </div>
-                              <div>
-                                <div className="font-semibold text-white/60 text-lg leading-none mb-2">
-                                  {item.company}
-                                </div>
-                                <div className="text-base text-white/60 leading-none text-muted-foreground mb-4">
-                                  {item.role}
-                                </div>
-                                <div className="text-sm text-white/60 font-medium">
-                                  {item.years}
-                                </div>
-                              </div>
-                            </div>
-                          )
-                        )}
-                      </div>
-                    </div>
 
                     {/* education */}
                     <div className="flex flex-col gap-y-6 xl:items-start items-center">
@@ -399,6 +362,46 @@ const About = () => {
                         )}
                       </div>
                     </div>
+                    
+                    {/* experience */}
+                    <div className="flex flex-col gap-y-6 xl:items-start items-center">
+                      <div className="flex gap-x-4  ">
+                        {/* <GraduationCap size={28} /> */}
+                        <h4 className="text-base uppercase">
+                          {getData(qualificationData, "experience").title}
+                        </h4>
+                      </div>
+                      {/* list */}
+                      <div className="flex flex-col gap-y-8 ">
+                        {getData(qualificationData, "experience").data.map(
+                          (item) => (
+                            <div
+                              className="flex gap-x-8 group"
+                              key={item.company}
+                            >
+                              {" "}
+                              {/* Unique key */}
+                              <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                                <div className="w-[11px] h-[11px] rounded-full bg-accent absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
+                              </div>
+                              <div>
+                                <div className="font-semibold text-white/60 text-lg leading-none mb-2">
+                                  {item.company}
+                                </div>
+                                <div className="text-base text-white/60 leading-none text-muted-foreground mb-4">
+                                  {item.role}
+                                </div>
+                                <div className="text-sm text-white/60 font-medium">
+                                  {item.years}
+                                </div>
+                              </div>
+                            </div>
+                          )
+                        )}
+                      </div>
+                    </div>
+
+                    
                   </div>
                 </div>
               </TabsContent>
