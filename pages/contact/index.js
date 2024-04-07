@@ -177,6 +177,7 @@ const Contact = () => {
                 strings={["...."]}
                 typeSpeed={120}
                 backSpeed={140}
+                loop
                 className="text-accent"
               />
             </motion.h2>
