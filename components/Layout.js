@@ -10,12 +10,17 @@ const sora = Sora({
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import TopLeftImg from "../components/TopLeftImg";
+import Head from 'next/head'
 
 const Layout = ({ children }) => {
   return (
     <div
       className={`page bg-site bg-primary/60 text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
     >
+      <Head>
+        <title>ANSIL RAHMAN</title>
+        <meta property="og:title" content="ANSIL RAHMAN" key="title" />
+      </Head>
       <TopLeftImg />
       <Nav />
       <Header />

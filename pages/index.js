@@ -6,6 +6,7 @@ import { ReactTyped } from "react-typed";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
+
 const Home = () => {
   return (
     <div className="h-full">
