@@ -7,7 +7,7 @@ const workSlides = {
           title: "VOXY",
           path: "/voxy.png",
           git: "https://github.com/ansilrahman777/voxy",
-          live: "https://www.ansilrahman777.online/",
+          live: "https://voxy.ansilrahman777.online",
         },
         {
           title: "ADIDAS CLONE",
@@ -33,6 +33,7 @@ const workSlides = {
           title: "BACKPACKERZ",
           path: "/thumb2.jpg",
           git: "https://github.com/ansilrahman777/Backpackerz",
+          live: "https://backpackerzz.ansilrahman777.online",
         },
         {
           title: "NETFLIX",
@@ -84,46 +85,45 @@ const WorkSlider = () => {
               {slide.images.map((image, index) => {
                 return (
                   <div
-                    className="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                    className="relative rounded-lg overflow-hidden flex items-center justify-center group h-full w-full"
                     key={index}
                   >
-                    <div className="flex items-center justify-center relative overflow-hidden">
+                    <div className="flex items-center justify-center relative overflow-hidden h-full w-full">
                       <Image src={image.path} alt="" width={500} height={300} />
                       <div
-                        className=" absolute inset-0 bg-gradient-to-l 
-                        from-transparent via-[#e838cc] to-[#4a22bd] opacity-0
-                        group-hover:opacity-80 transition-all duration-700"
+                        className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0
+                    group-hover:opacity-80 transition-all duration-700"
                       ></div>
                       <div
-                        className="absolute bottom-0 translate-y-full group-hover:-translate-y-10
-                        group-hover:xl:-translate-y-20 transition-all duration-300"
+                        className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100
+                    transition-all duration-300"
                       >
-                        <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
-                          <TbBrandGithub />
-                          <Link
-                            href={image.git}
-                            className="translate-y-[500%] group-hover:translate-y-0
-                          transition-all duration-300 delay-150"
-                          >
-                            {image.title}
-                          </Link>
-
-                          <div
-                            className="text-xl translate-y-[500%] group-hover:translate-y-0
-                           transition-all duration-300 delay-200"
-                          >
-                            <BsArrowRight />
-                          </div>
-                        </div>
-
-                        {image.live && (
-                          <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
-                            <TbLivePhoto />
-                            <Link href={image.live} className="delay-100">
-                              Live
+                        <div className="text-center">
+                          <div className="flex flex-col items-center sm:flex-row sm:items-center gap-x-2 text-[11px] sm:text-[13px] tracking-[0.1em] sm:tracking-[0.2em] mb-2">
+                            <TbBrandGithub className="text-[20px] sm:text-[24px]" />
+                            <Link
+                              href={image.git}
+                              className="transition-all duration-300 delay-150"
+                            >
+                              {image.title}
                             </Link>
+                            <div className="text-lg sm:text-xl transition-all duration-300 delay-200">
+                              <BsArrowRight />
+                            </div>
                           </div>
-                        )}
+
+                          {image.live && (
+                            <div className="flex flex-col items-center sm:flex-row sm:items-center gap-x-2 text-[11px] sm:text-[13px] tracking-[0.1em] sm:tracking-[0.2em]">
+                              <TbLivePhoto className="text-[20px] sm:text-[24px]" />
+                              <Link
+                                href={image.live}
+                                className="transition-all duration-300 delay-100"
+                              >
+                                Live
+                              </Link>
+                            </div>
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>

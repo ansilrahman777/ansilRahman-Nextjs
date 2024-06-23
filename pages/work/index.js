@@ -25,7 +25,7 @@ const Work = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='mb-4 max-w-[400px] mx-auto lg:mx-0 text-justify'>
+            className='mb-4 max-w-[400px] mx-auto lg:mx-0 text-justify hidden lg:block'>
             Service is what life is all about.Great acts are made up of small deeds.
             Goodness is the only investment that never fails.
           </motion.p>
