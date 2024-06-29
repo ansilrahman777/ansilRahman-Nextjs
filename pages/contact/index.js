@@ -166,7 +166,7 @@ const Contact = () => {
         ) : (
           <div className="flex flex-col w-full max-w-[700px] ">
             <motion.h2
-              className="h2 text-[43px] text-center mb-12"
+              className="h2 text-[52px] text-center mb-12"
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               animate="show"
@@ -175,8 +175,8 @@ const Contact = () => {
               Thank you for Connecting
               <ReactTyped
                 strings={["...."]}
-                typeSpeed={120}
-                backSpeed={140}
+                typeSpeed={100}
+                backSpeed={100}
                 loop
                 className="text-accent"
               />
