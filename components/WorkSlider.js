@@ -10,10 +10,11 @@ const workSlides = {
           live: "https://voxy.ansilrahman777.online",
         },
         {
-          title: "ADIDAS CLONE",
-          path: "/adidas.png",
-          git: "https://github.com/ansilrahman777/Adidas",
-        },
+          title: "BACKPACKERZ",
+          path: "/backpackerz.png",
+          git: "https://github.com/ansilrahman777/Backpackerz",
+          live: "https://backpackerzz.ansilrahman777.online",
+        },        
         {
           title: "TODO",
           path: "/todo.png",
@@ -29,11 +30,10 @@ const workSlides = {
     },
     {
       images: [
-        {
-          title: "BACKPACKERZ",
-          path: "/thumb2.jpg",
-          git: "https://github.com/ansilrahman777/Backpackerz",
-          live: "https://backpackerzz.ansilrahman777.online",
+       {
+          title: "ADIDAS CLONE",
+          path: "/adidas.png",
+          git: "https://github.com/ansilrahman777/Adidas",
         },
         {
           title: "NETFLIX",
