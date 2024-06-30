@@ -1,5 +1,5 @@
 // icons
-import {RxArrowTopRight } from "react-icons/rx";
+import { RxArrowTopRight } from "react-icons/rx";
 
 import {
   RiHtml5Line,
@@ -9,6 +9,7 @@ import {
 } from "react-icons/ri";
 import { TbBrandPython } from "react-icons/tb";
 import { TbBrandTailwind } from "react-icons/tb";
+import Link from "next/link";
 
 // data
 const serviceData = [
@@ -17,36 +18,42 @@ const serviceData = [
     title: "PYTHON",
     description:
       "Versatile backend solutions, data analysis, and automation expertise offered.",
+    path: "https://www.python.org/doc/",
   },
   {
     icon: <RiReactjsLine />,
     title: "REACT",
     description:
       "Empowering dynamic interfaces through efficient React component architecture",
+    path: "https://react.dev/",
   },
   {
     icon: <TbBrandTailwind />,
     title: "TAILWIND",
     description:
       "Efficiently styled and responsive interfaces crafted effortlessly with Tailwind CSS.",
+    path: "https://tailwindcss.com/docs/installation",
   },
   {
     icon: <RiHtml5Line />,
     title: "HTML",
     description:
       "Engaging web interfaces with semantic HTML for optimal compatibility.",
+    path: "https://www.w3schools.com/html/html_intro.asp",
   },
   {
     icon: <RiCss3Line />,
     title: "CSS",
     description:
       "Flexibility and creativity craft stunning, dynamic layouts effortlessly using CSS.",
+    path: "https://www.w3schools.com/cssref/index.php",
   },
   {
     icon: <RiBootstrapLine />,
     title: "BOOTSTRAP",
     description:
       "Rapid responsive website development ensured with Bootstrap framework.",
+    path: "https://getbootstrap.com/docs/4.1/getting-started/introduction/",
   },
 ];
 
@@ -94,7 +101,9 @@ const ServiceSlider = () => {
                 </p>
               </div>
               <div className="text-3xl">
-                <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
+                <Link href='/contact'>
+                  <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
+                </Link>
               </div>
             </div>
           </SwiperSlide>
