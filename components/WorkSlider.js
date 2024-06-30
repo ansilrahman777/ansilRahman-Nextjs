@@ -14,14 +14,14 @@ const workSlides = {
           path: "/backpackerz.png",
           git: "https://github.com/ansilrahman777/Backpackerz",
           live: "https://backpackerzz.ansilrahman777.online",
-        },        
+        },
         {
           title: "TODO",
           path: "/todo.png",
           git: "https://github.com/ansilrahman777/Todo",
         },
         {
-          title: "PORFOLIO",
+          title: "PORTFOLIO",
           path: "/ansil.png",
           git: "https://github.com/ansilrahman777/ansilRahman",
           live: "https://ansilrahman777.github.io/ansilRahman/",
@@ -30,7 +30,7 @@ const workSlides = {
     },
     {
       images: [
-       {
+        {
           title: "ADIDAS CLONE",
           path: "/adidas.png",
           git: "https://github.com/ansilrahman777/Adidas",
@@ -46,7 +46,7 @@ const workSlides = {
           git: "https://github.com/ansilrahman777/olxClone",
         },
         {
-          title: "BENTELY CLONE",
+          title: "BENTLEY CLONE",
           path: "/bentely.png",
           git: "https://github.com/ansilrahman777/Bentely",
         },
