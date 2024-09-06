@@ -7,7 +7,7 @@ const ProjectsBtn = () => {
   return (
     <div className="mx-auto xl:mx-0 relative">
       <a
-        href="/Ansil_ Rahman.pdf"
+        href="/Ansil Rahman.pdf"
         download="Ansil Rahman.pdf"
         className="w-[180px] h-[180px] bg-circleStar bg-cover bg-center bg-no-repeat group flex justify-center items-center"
       >
