@@ -107,8 +107,18 @@ const About = () => {
       title: "experience",
       data: [
         {
+          company: "Freelancer Developer",
+          role: "Software Developer",
+          years: "2024-Present",
+        },
+        {
+          company: "Pepil Consultancy Services",
+          role: "Associate Software Engineer",
+          years: "2023-2024",
+        },
+        {
           company: "Brototype",
-          role: "PYTHON DEVELOPER INTERN",
+          role: "Full Stack Developer",
           years: "2023-2024",
         },
       ],
