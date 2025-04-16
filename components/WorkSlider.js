@@ -16,17 +16,16 @@ const workSlides = {
           live: "https://backpackerzz.ansilrahman777.online",
         },
         {
+          title: "TODO",
+          path: "/todo.png",
+          git: "https://github.com/ansilrahman777/Todo",
+        },
+        {
           title: "VOXY",
           path: "/voxy.png",
           git: "https://github.com/ansilrahman777/voxy",
           live: "https://voxy.ansilrahman777.online",
         },
-        {
-          title: "TODO",
-          path: "/todo.png",
-          git: "https://github.com/ansilrahman777/Todo",
-        },
-        
       ],
     },
     {
