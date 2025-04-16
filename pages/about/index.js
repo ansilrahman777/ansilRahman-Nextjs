@@ -62,7 +62,7 @@ const About = () => {
     },
     {
       icon: <PhoneCall className="text-accent" size={20} />,
-      text: "+91 8592959403",
+      text: "+971 581361438",
     },
     {
       icon: <Calendar className="text-accent" size={20} />,
@@ -78,7 +78,7 @@ const About = () => {
     },
     {
       icon: <HomeIcon className="text-accent" size={20} />,
-      text: "Kochi,Kerala",
+      text: "Abu Dhabi, UAE",
     },
   ];
 
