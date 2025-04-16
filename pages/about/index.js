@@ -109,12 +109,12 @@ const About = () => {
         {
           company: "Freelancer Developer",
           role: "Software Developer",
-          years: "2024-Present",
+          years: "Present",
         },
         {
           company: "Pepil Consultancy Services",
           role: "Associate Software Engineer",
-          years: "2023-2024",
+          years: "2024",
         },
         {
           company: "Brototype",
