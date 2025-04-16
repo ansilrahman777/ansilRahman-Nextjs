@@ -4,10 +4,10 @@ const workSlides = {
     {
       images: [
         {
-          title: "VOXY",
-          path: "/voxy.png",
-          git: "https://github.com/ansilrahman777/voxy",
-          live: "https://voxy.ansilrahman777.online",
+          title: "CAR NATION",
+          path: "/carnatioauh.png",
+          git: "https://github.com/carnationauh",
+          live: "https://www.carnationauh.com/",
         },
         {
           title: "BACKPACKERZ",
@@ -16,16 +16,17 @@ const workSlides = {
           live: "https://backpackerzz.ansilrahman777.online",
         },
         {
+          title: "VOXY",
+          path: "/voxy.png",
+          git: "https://github.com/ansilrahman777/voxy",
+          live: "https://voxy.ansilrahman777.online",
+        },
+        {
           title: "TODO",
           path: "/todo.png",
           git: "https://github.com/ansilrahman777/Todo",
         },
-        {
-          title: "PORTFOLIO",
-          path: "/ansil.png",
-          git: "https://github.com/ansilrahman777/ansilRahman",
-          live: "https://ansilrahman777.github.io/ansilRahman/",
-        },
+        
       ],
     },
     {
@@ -41,9 +42,10 @@ const workSlides = {
           git: "https://github.com/ansilrahman777/Netflix",
         },
         {
-          title: "OLX",
-          path: "/thumb3.jpg",
-          git: "https://github.com/ansilrahman777/olxClone",
+          title: "PORTFOLIO",
+          path: "/ansil.png",
+          git: "https://github.com/ansilrahman777/ansilRahman",
+          live: "https://ansilrahman777.github.io/ansilRahman/",
         },
         {
           title: "BENTLEY CLONE",
