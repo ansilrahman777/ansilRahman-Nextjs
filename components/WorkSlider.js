@@ -5,7 +5,7 @@ const workSlides = {
       images: [
         {
           title: "CAR NATION",
-          path: "/carnatioauh.png",
+          path: "/carnationauh.png",
           git: "https://github.com/carnationauh",
           live: "https://www.carnationauh.com/",
         },
