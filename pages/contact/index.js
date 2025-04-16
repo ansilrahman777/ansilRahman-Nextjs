@@ -81,7 +81,7 @@ const Contact = () => {
             </div>
             <div className="flex items-center gap-2">
               <PhoneIcon size={18} className="text-accent" />
-              <div>+91 8592959403</div>
+              <div>+91 8592959403 | +971 581361438</div>
             </div>
             <div className="flex items-center gap-2">
               <MapPin size={18} className="text-accent" />
