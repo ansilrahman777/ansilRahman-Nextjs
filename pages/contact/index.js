@@ -85,7 +85,7 @@ const Contact = () => {
             </div>
             <div className="flex items-center gap-2">
               <MapPin size={18} className="text-accent" />
-              <div>Kochi, Kerala, India</div>
+              <div>Abu Dhabi, UAE</div>
             </div>
           </div>
           <div className="hidden mt-10 md:flex ">
