@@ -24,7 +24,7 @@ const workSlides = {
           title: "VOXY",
           path: "/voxy.png",
           git: "https://github.com/ansilrahman777/voxy",
-          live: "https://voxy.ansilrahman777.online",
+          live: "https://drive.google.com/file/d/1IHcofhyGCuxc0HGgu6j8aJv8cWKiT0WU/view?usp=drive_link",
         },
       ],
     },
