@@ -13,7 +13,7 @@ const workSlides = {
           title: "BACKPACKERZ",
           path: "/backpackerz.png",
           git: "https://github.com/ansilrahman777/Backpackerz",
-          live: "https://backpackerzz.ansilrahman777.online",
+          live: "https://backpackerz.ansilrahman.in",
         },
         {
           title: "TODO",
