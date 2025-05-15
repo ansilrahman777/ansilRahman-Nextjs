@@ -30,7 +30,7 @@ const Home = () => {
             animate="show"
             exit="hidden"
           >
-            Passionate Full Stack Developer dedicated to crafting innovative web solutions with a focus on user experience, performance, and scalability
+            Passionate FullStack Developer dedicated to crafting innovative web solutions with a focus on user experience, robust performance, and scalability
           </motion.p>
 
           <motion.div 
