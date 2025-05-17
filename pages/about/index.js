@@ -9,25 +9,23 @@ import { PiShapesFill } from "react-icons/pi";
 import { BsPersonFill } from "react-icons/bs";
 import { FaGraduationCap } from "react-icons/fa";
 // icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaPython,
-  FaJs,
-  FaReact,
-  FaFigma,
+
+import { 
+  FaPython, FaHtml5, FaCss3, FaJs, FaReact, FaFigma 
 } from "react-icons/fa";
 
-import {
-  SiFramer,
-  SiAdobexd,
-  SiDjango,
-  SiTailwindcss,
-  SiPostgresql,
-  SiFirebase,
-  SiMongodb,
-  SiRedux,
+import { VscVscodeInsiders } from "react-icons/vsc";
+
+import { 
+  SiJava, SiNextdotjs, SiAmazonaws, SiDocker, SiDjango, SiRedux, SiTailwindcss, 
+  SiFramer, SiPostgresql, SiMongodb, SiFirebase, SiAdobexd, SiGit, SiPostman, 
+  SiMysql, SiEclipseide, SiCanva, SiVisualstudiocode,
+  SiVercel,
+  SiBackblaze,
+  SiNginx,SiJquery ,
+  SiPycharm,SiSelenium 
 } from "react-icons/si";
+
 
 import {
   User2,
@@ -129,20 +127,36 @@ const About = () => {
     {
       title: "skills",
       icons: [
-        <FaPython key="python" />,
-        <FaHtml5 key="html" />,
-        <FaCss3 key="css" />,
-        <SiDjango key="django" />,
-        <FaJs key="javascript" />,
-        <FaReact key="react" />,
-        <SiRedux key="redux" />,
-        <SiTailwindcss key="tailwind" />,
-        <SiFramer key="framer" />,
-        <FaFigma key="figma" />,
-        <SiPostgresql key="postgresql" />,
-        <SiMongodb key="mongodb" />,
-        <SiFirebase key="firebase" />,
-        <SiAdobexd key="adobexd" />,
+  <FaPython key="python" />,
+  <FaReact key="react" />,
+  <FaHtml5 key="html" />,
+  <SiNextdotjs key="nextjs" />,
+  <SiJava key="java" />,
+  <FaCss3 key="css" />,
+  <SiTailwindcss key="tailwind" />,
+  <SiJquery  key="jquery" />,
+  <FaJs key="javascript" />,
+  <SiDjango key="django" />,
+  <SiGit key="git" />,
+  <SiPostgresql key="postgresql" />,
+  <SiMongodb key="mongodb" />,
+  <SiFirebase key="firebase" />,
+  <SiMysql key="mysql" />,
+  <SiRedux key="redux" />,
+  <SiPostman key="postman" />,
+  <SiBackblaze key="backblaze" />,
+  <SiVercel key="vercel" />,
+  <SiAmazonaws key="aws" />,
+  <SiDocker key="docker" />,
+  <SiNginx key="nginx" />,
+  <SiSelenium key="selenium" />,
+  <SiCanva key="canva" />,
+  <SiFramer key="framer" />,
+  <FaFigma key="figma" />,
+  <SiAdobexd key="adobexd" />,
+  <SiEclipseide key="eclipseide" />,
+  <SiPycharm key="pycharm" />,
+  <VscVscodeInsiders key="vscodeinsiders" />,
       ],
     },
   ];
