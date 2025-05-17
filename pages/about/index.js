@@ -11,15 +11,15 @@ import { FaGraduationCap } from "react-icons/fa";
 // icons
 
 import { 
-  FaPython, FaHtml5, FaCss3, FaJs, FaReact, FaFigma 
+  FaPython, FaHtml5, FaCss3, FaJs, FaReact, FaFigma ,FaJava 
 } from "react-icons/fa";
 
 import { VscVscodeInsiders } from "react-icons/vsc";
 
 import { 
-  SiJava, SiNextdotjs, SiAmazonaws, SiDocker, SiDjango, SiRedux, SiTailwindcss, 
+  SiNextdotjs, SiAmazonaws, SiDocker, SiDjango, SiRedux, SiTailwindcss, 
   SiFramer, SiPostgresql, SiMongodb, SiFirebase, SiAdobexd, SiGit, SiPostman, 
-  SiMysql, SiEclipseide, SiCanva, SiVisualstudiocode,
+  SiMysql, SiEclipseide, SiCanva,
   SiVercel,
   SiBackblaze,
   SiNginx,SiJquery ,
@@ -131,7 +131,7 @@ const About = () => {
   <FaReact key="react" />,
   <FaHtml5 key="html" />,
   <SiNextdotjs key="nextjs" />,
-  <SiJava key="java" />,
+  <FaJava key="java" />,
   <FaCss3 key="css" />,
   <SiTailwindcss key="tailwind" />,
   <SiJquery  key="jquery" />,
@@ -156,7 +156,7 @@ const About = () => {
   <SiAdobexd key="adobexd" />,
   <SiEclipseide key="eclipseide" />,
   <SiPycharm key="pycharm" />,
-  <VscVscodeInsiders key="vscodeinsiders" />,
+  <VscVscodeInsiders key="vscode" />,
       ],
     },
   ];
