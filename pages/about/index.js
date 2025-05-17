@@ -14,8 +14,6 @@ import {
   FaPython, FaHtml5, FaCss3, FaJs, FaReact, FaFigma ,FaJava 
 } from "react-icons/fa";
 
-import { VscVscode } from "react-icons/vsc";
-
 import { 
   SiNextdotjs, SiAmazonaws, SiDocker, SiDjango, SiRedux, SiTailwindcss, 
   SiFramer, SiPostgresql, SiMongodb, SiFirebase, SiAdobexd, SiGit, SiPostman, 
@@ -156,7 +154,6 @@ const About = () => {
   <SiAdobexd key="adobexd" />,
   <SiEclipseide key="eclipseide" />,
   <SiPycharm key="pycharm" />,
-  <VscVscode key="vscode" />,
       ],
     },
   ];
