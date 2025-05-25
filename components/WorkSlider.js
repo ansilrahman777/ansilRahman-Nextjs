@@ -19,12 +19,14 @@ const workSlides = {
           title: "TODO",
           path: "/todo.png",
           git: "https://github.com/ansilrahman777/Todo",
+          live: "https://todoansilrahman.vercel.app/",
+
         },
         {
           title: "VOXY",
           path: "/voxy.png",
           git: "https://github.com/ansilrahman777/voxy",
-          live: "https://drive.google.com/file/d/1IHcofhyGCuxc0HGgu6j8aJv8cWKiT0WU/view?usp=drive_link",
+          live: "https://voxy.ansilrahman.in/",
         },
       ],
     },
