@@ -6,6 +6,8 @@ import {
   RiTwitterXFill ,
 } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
+import { SiFigma } from "react-icons/si";
+
 
 
 const Socials = () => {
@@ -15,8 +17,8 @@ const Socials = () => {
         <RiGithubLine  />
       </Link>
 
-      <Link href={"https://leetcode.com/rahmanansil777/"} className="hover:text-accent transition-all duration-300">
-        <SiLeetcode />
+      <Link href={"https://www.figma.com/@ansilrahman"} className="hover:text-accent transition-all duration-300">
+        <SiFigma />
       </Link>
 
       <Link href={"https://wa.me/918592959403"} className="hover:text-accent transition-all duration-300">
