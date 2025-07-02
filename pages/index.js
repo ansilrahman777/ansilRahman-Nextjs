@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Head from "next/head";
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
@@ -10,6 +11,55 @@ import { fadeIn } from "../variants";
 const Home = () => {
   return (
     <div className="h-full">
+    <Head>
+        <title>Ansil Rahman | Full Stack, Frontend & Backend Developer Dubai</title>
+        <meta
+          name="description"
+          content="Hire Ansil Rahman — Full Stack Developer, Frontend Developer, Backend Developer, and Creative Web Designer based in Dubai, UAE. Expert in Python, Django, React, Next.js, Web Hosting & SEO."
+        />
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Ansil Rahman",
+              "jobTitle": "Full Stack Developer, Web Designer",
+              "description": "Ansil Rahman is a Full Stack Developer based in Dubai, UAE. Specializing in frontend, backend, creative design, and web hosting services using Python, Django, React, Next.js, HTML, CSS.",
+              "url": "https://ansilrahman.in",
+              "sameAs": [
+                "https://linkedin.com/in/ansilrahman777",
+                "https://github.com/ansilrahman777"
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Dubai",
+                "addressCountry": "United Arab Emirates"
+              },
+              "knowsAbout": [
+                "Frontend Development",
+                "Backend Development",
+                "Full Stack Web Development",
+                "Web Hosting Services",
+                "Creative Web Design",
+                "Python",
+                "Django",
+                "React",
+                "Next.js",
+                "AWS",
+                "Photography",
+                "Designer",
+                "web designing",
+                "ui ux designing",
+                "Tailwind",
+                "HTML",
+                "CSS"
+              ]
+            })
+          }}
+        />
+      </Head>
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center xl:pt-35 xl:text-left h-full p-5 md:container  mx-auto">
           <motion.h1
