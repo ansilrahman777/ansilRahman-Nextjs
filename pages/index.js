@@ -25,7 +25,7 @@ const Home = () => {
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Ansil Rahman",
-              "image": "https://ansilrahman.in/AnsilRahman_Dev.png",
+              "image": "https://ansilrahman.in/ansil-rahman-full-stack-developer.png",
               "jobTitle": "Full Stack Developer, Web Designer",
               "description": "Ansil Rahman is a Full Stack Developer based in Dubai, UAE. Specializing in frontend, backend, creative design, and web hosting services using Python, Django, React, Next.js, HTML, CSS.",
               "url": "https://ansilrahman.in",
