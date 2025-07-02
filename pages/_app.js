@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Ansil Rahman | Full Stack Developer Dubai" />
         <meta property="og:description" content="Full Stack Developer & Web Designer offering frontend, backend, and hosting services in Dubai, UAE." />
-        <meta property="og:image" content="/logo.png" />
+        <meta property="og:image" content="/AnsilRahman_Dev.png" />
         <meta property="og:url" content="https://ansilrahman.in" />
       </Head>
       <AnimatePresence mode="wait">
