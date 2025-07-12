@@ -77,7 +77,7 @@ const Contact = () => {
           <div className="flex flex-col mt-4 md:mt-10 gap-y-3 ">
             <div className="flex items-center gap-2 ">
               <MailIcon size={18} className="text-accent" />
-              <div>ansilrahman777@gmail.com</div>
+              <div>info@ansilrahman.in</div>
             </div>
             <div className="flex items-center gap-2">
               <PhoneIcon size={18} className="text-accent" />
